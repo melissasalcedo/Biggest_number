@@ -10,6 +10,10 @@ app.geometry("350x400")
 app.config(bg="#E1CFCF")
 app.resizable(False, False)
 
+# Message label
+mess_label = ctk.CTkLabel(app, text="Type 3 Numbers", bg_color='#AD6E8C', text_color='#403F3F',)
+mess_label.place(relx=0.34, rely=0.18)
+
 # Entry widgets
 entry1 = ctk.CTkEntry(app, text_color="#000000", bg_color="#E1CFCF", fg_color="#FFF5F7", width=85)
 entry1.place(relx=0.075, rely=0.4)
