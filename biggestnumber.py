@@ -8,11 +8,12 @@ number2 = int(input("What's the second number?: "))
 number3 = int(input("What's the third number?: "))
 
 # Find the highest number
+biggest_number = max(number1, number2, number3)
 
 # If the numbers are equal
-
-
-
-
+if number1 == number2 == number3:
+    print("There is no highest, All numbers are equal")
+else:
+    print(f"The biggest number is: {biggest_number}")
     
 
