@@ -10,9 +10,14 @@ app.geometry("350x400")
 app.config(bg="#E1CFCF")
 app.resizable(False, False)
 
+# Fonts
+font1 =  ('Plantagenet Cherokee', 28, 'italic', 'bold')
+# Message frame
+mess_frame = ctk.CTkEntry(app, width=250, height=50, fg_color="#AD6E8C", bg_color="#E1CFCF", corner_radius=30)
+mess_frame.place(relx=0.150, rely=0.13)
 # Message label
-mess_label = ctk.CTkLabel(app, text="Type 3 Numbers", bg_color='#AD6E8C', text_color='#403F3F',)
-mess_label.place(relx=0.34, rely=0.18)
+mess_label = ctk.CTkLabel(app, text="Type 3 Numbers", bg_color='#AD6E8C', text_color='#403F3F', font=font1)
+mess_label.place(relx=0.20, rely=0.15)
 
 # Entry widgets
 entry1 = ctk.CTkEntry(app, text_color="#000000", bg_color="#E1CFCF", fg_color="#FFF5F7", width=85)
