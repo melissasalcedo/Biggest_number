@@ -12,6 +12,7 @@ app.resizable(False, False)
 
 # Fonts
 font1 =  ('Plantagenet Cherokee', 28, 'italic', 'bold')
+font2 = ('Franklin Gothic Book', 19, 'bold')
 # Message frame
 mess_frame = ctk.CTkEntry(app, width=250, height=50, fg_color="#AD6E8C", bg_color="#E1CFCF", corner_radius=30)
 mess_frame.place(relx=0.150, rely=0.13)
@@ -37,6 +38,9 @@ def find_the_biggest_number():
 
         # Find the highest number
         biggest_number = max(number1, number2, number3)
+
+        result_label.config(text=f"The biggest number is: {biggest_number}")
+
         
         # Display the result in window
         if number1 == number2 == number3:
@@ -46,6 +50,10 @@ def find_the_biggest_number():
         
     except ValueError:
         result_label.config(text="Please enter valid numbers.")
+
+# Enter Button
+Enter_button = ctk.CTkButton(app, command=find_the_biggest_number, text="Enter", font=font2, text_color= "#545454", fg_color="#C4A5B8", bg_color="#E1CFCF", hover_color="#DFBCD2", corner_radius=20, cursor="hand2", width=110)
+Enter_button.place(relx=0.350, rely=0.55)
 
 result_label = tk.Label(app, text="Result will be displayed here.")
 
