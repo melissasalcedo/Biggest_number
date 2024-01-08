@@ -6,18 +6,18 @@ from tkinter import PhotoImage, Label
 
 app = ctk.CTk()
 app.title('What is the 3 numbers?')
-app.geometry("500x250")
+app.geometry("350x400")
 app.config(bg="#E1CFCF")
 app.resizable(False, False)
 
 # Entry widgets
-entry1 = tk.Entry(app, width=10)
-entry2 = tk.Entry(app, width=10)
-entry3 = tk.Entry(app, width=10)
+entry1 = ctk.CTkEntry(app, text_color="#000000", bg_color="#E1CFCF", fg_color="#FFF5F7", width=85)
+entry1.place(relx=0.075, rely=0.4)
+entry2 = ctk.CTkEntry(app, text_color="#000000", bg_color="#E1CFCF", fg_color="#FFF5F7", width=85)
+entry2.place(relx=0.385, rely=0.4)
+entry3 = ctk.CTkEntry(app, text_color="#000000", bg_color="#E1CFCF", fg_color="#FFF5F7", width=85)
+entry3.place(relx=0.7, rely=0.4)
 
-entry1.grid(row=0, column=0, pady=5)
-entry2.grid(row=1, column=0, pady=5)
-entry3.grid(row=2, column=0, pady=5)
 
 # Ask user for input
 def find_the_biggest_number():
