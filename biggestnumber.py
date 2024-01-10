@@ -8,7 +8,7 @@ def find_the_biggest_number():
         number1 = int(entry1.get())
         number2 = int(entry2.get())
         number3 = int(entry3.get())
-        
+
         # Comparing the numbers
         if number1 > number2 and number1 > number3:
             biggest_number = number1
@@ -16,6 +16,16 @@ def find_the_biggest_number():
             biggest_number = number2
         elif number3 > number1 and number3 > number2:
             biggest_number = number3
+
+        else:
+            # Two numbers are equal
+            if number1 == number2 or number1 == number3:
+                biggest_number = number1
+            else:
+                biggest_number = number2
+
+        # Display the result in window
+        result_label.configure(text=f"The biggest number is: \n{biggest_number}")
         
         # Display the result in window
         if number1 == number2 == number3:
