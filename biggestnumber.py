@@ -15,9 +15,6 @@ def find_the_biggest_number():
             biggest_number = number2
         elif number3 > number1 and number3 > number2:
             biggest_number = number3
-         
-    
-
         
         # Display the result in window
         if number1 == number2 == number3:
