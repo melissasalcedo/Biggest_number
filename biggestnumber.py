@@ -8,7 +8,8 @@ def find_the_biggest_number():
         number1 = int(entry1.get())
         number2 = int(entry2.get())
         number3 = int(entry3.get())
-
+        
+        # Comparing the numbers
         if number1 > number2 and number1 > number3:
             biggest_number = number1
         elif number2 > number1 and number2 > number3:
