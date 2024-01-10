@@ -9,8 +9,10 @@ def find_the_biggest_number():
         number2 = int(entry2.get())
         number3 = int(entry3.get())
 
-        # Find the highest number
-        biggest_number = max(number1, number2, number3)
+        if number1 > number2 and number1 > number3:
+            biggest_number = number1
+         
+    
 
         
         # Display the result in window
