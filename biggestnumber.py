@@ -13,6 +13,8 @@ def find_the_biggest_number():
             biggest_number = number1
         elif number2 > number1 and number2 > number3:
             biggest_number = number2
+        elif number3 > number1 and number3 > number2:
+            biggest_number = number3
          
     
 
